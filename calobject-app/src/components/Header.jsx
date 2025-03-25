@@ -1,44 +1,27 @@
 import Logo from "../assets/logo.png";
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
+import UserIcone from "../assets/user.png";
 
-// function Header(){
 
-//     return(
-//         <div className="header">
-//             <Link to="/">
-//                 <img src={Logo} alt="Calobject Logo" />
-//             </Link>
-//             <Link to = "/calobject">
-//                 <button>Guest</button>
-//             </Link>
-//             <Link to="/login" >
-//                 <button>Log in</button>
-//             </Link>
-//             <Link to="/signup">
-//                 <button>Sign up</button>
-//             </Link>
-            
-//         </div>
-//     )
-// }
+function Header({isLoggedIn, username, onLogout}){
 
-// export default Header
-
-const header = ({isLoggedIn,username, onLogout, onLogin}) =>{
+    
+    
     return(
-        <header>
+        <header style={{border: "1px black solid"}}>
             {isLoggedIn ? (
                 <div>
-                    <img src={Logo} alt="calobject logo" />
+                    <img src="" alt="calobject logo" />
                     <p>{username}</p>
+                    <img src="" alt="icone" />
                     <button onClick={onLogout}>Log out</button>
                 </div>
                 ):(
                     <div>
-                        <img src={Logo} alt="calobject logo" />
-                        <button>Log in</button>
-                        <button>Log in</button>
-                        <button>Guest</button>
+                        <img src="" alt="calobject logo" />
+                        <Link to="/login"><button>Log in</button></Link>
+                        <Link to="/signup"><button>Sign up</button></Link>
+                        <Link to="/calobject"><button>Guest</button></Link>
                     </div>
                 )
                 
@@ -46,3 +29,5 @@ const header = ({isLoggedIn,username, onLogout, onLogin}) =>{
         </header>
     )
 }
+
+export default Header

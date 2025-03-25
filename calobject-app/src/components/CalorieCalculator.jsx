@@ -11,11 +11,14 @@ function CalorieCalculator(){
     const[objective, setObjective] = useState("");
     const[Kcal, setKcal] = useState(0);
     const[showResult, setShowResult] = useState(false);
+
+    const storedData = JSON.parse(localStorage.getItem("user"));
+    const username = storedData ? storedData.username : "user";
     
     
     //Function that calculate calorie based on inputs value
     function Calculator(){
-    
+        //converting string value to number
         const weightNum = parseFloat(weight);
         const heightNum = parseFloat(height);
         const ageNum = parseFloat(age);
@@ -50,17 +53,12 @@ function CalorieCalculator(){
 
     return(
         <div>
-            <h2>welcome Morchiid!</h2>
+            <h2>Welcome <span>{username && username.charAt(0).toUpperCase() + username.slice(1)}</span> !</h2>
             <p>Enter the current informations, please.</p>
             <form action="">
                 <label>Age:</label>
                 <input type="number" min="0" value={age} onChange={(e) => {setAge(e.target.value); setShowResult(false)}}/><br />
 
-                {/* <label>Gender:</label>
-                <select name="Gender"  value={gender} onChange={(e) => {setGender(e.target.value); setShowResult(false)}}>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                </select><br /> */}
                 <div>
                 <label>Gender :</label>
                 <input type="radio" value="male" checked={gender == "male"} onChange={(e) => {setGender(e.target.value); setShowResult(false)}}/>Male
