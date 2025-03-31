@@ -1,0 +1,167 @@
+{
+    "meals": [
+      {
+        "category": "300 kcal or less",
+        "items": [
+          {
+            "title": "Greek Yogurt with Berries and Nuts",
+            "description": "Creamy Greek yogurt topped with fresh mixed berries and a handful of almonds.",
+            "image": "https://example.com/greek-yogurt.jpg",
+            "calories": 290,
+            "ingredients": ["1 cup Greek yogurt", "1/2 cup mixed berries", "5 almonds", "1 tsp honey"]
+          },
+          {
+            "title": "Oatmeal with Banana and Honey",
+            "description": "Warm oatmeal topped with sliced banana, a drizzle of honey, and a sprinkle of cinnamon.",
+            "image": "https://example.com/oatmeal.jpg",
+            "calories": 300,
+            "ingredients": ["1/3 cup oats", "1/2 cup milk or water", "1/2 banana", "1 tsp honey", "1/2 tsp cinnamon"]
+          },
+          {
+            "title": "Cottage Cheese with Pineapple",
+            "description": "Low-fat cottage cheese topped with fresh pineapple chunks.",
+            "image": "https://example.com/cottage-cheese.jpg",
+            "calories": 280,
+            "ingredients": ["1/2 cup cottage cheese", "1/2 cup pineapple chunks"]
+          },
+          {
+            "title": "Carrot and Hummus Snack",
+            "description": "Fresh carrot sticks served with a side of hummus.",
+            "image": "https://example.com/carrot-hummus.jpg",
+            "calories": 250,
+            "ingredients": ["1 cup carrot sticks", "3 tbsp hummus"]
+          },
+          {
+            "title": "Hard-Boiled Eggs with Spinach",
+            "description": "Two hard-boiled eggs with a handful of fresh spinach.",
+            "image": "https://example.com/eggs-spinach.jpg",
+            "calories": 270,
+            "ingredients": ["2 hard-boiled eggs", "1/2 cup fresh spinach"]
+          },
+          {
+            "title": "Apple Slices with Peanut Butter",
+            "description": "Crisp apple slices served with natural peanut butter.",
+            "image": "https://example.com/apple-peanutbutter.jpg",
+            "calories": 300,
+            "ingredients": ["1 apple", "1 tbsp peanut butter"]
+          },
+          {
+            "title": "Tomato and Mozzarella Salad",
+            "description": "Cherry tomatoes and fresh mozzarella drizzled with balsamic vinegar.",
+            "image": "https://example.com/tomato-mozzarella.jpg",
+            "calories": 280,
+            "ingredients": ["1/2 cup cherry tomatoes", "1 oz fresh mozzarella", "1 tsp balsamic vinegar"]
+          }
+        ]
+      },
+      {
+        "category": "400 kcal or less",
+        "items": [
+          {
+            "title": "Avocado Toast with Egg",
+            "description": "Whole grain toast topped with mashed avocado, a poached egg, and a sprinkle of chili flakes.",
+            "image": "https://example.com/avocado-toast.jpg",
+            "calories": 320,
+            "ingredients": ["1 slice whole grain bread", "1/2 avocado", "1 egg", "Salt & pepper", "Chili flakes"]
+          },
+          {
+            "title": "Hummus and Veggie Wrap",
+            "description": "A whole-wheat tortilla filled with hummus, sliced cucumbers, carrots, and spinach.",
+            "image": "https://example.com/hummus-wrap.jpg",
+            "calories": 360,
+            "ingredients": ["1 whole wheat tortilla", "2 tbsp hummus", "1/4 cucumber", "1/2 carrot", "Handful of spinach"]
+          },
+          {
+            "title": "Grilled Chicken Salad",
+            "description": "Grilled chicken breast on a bed of mixed greens, cherry tomatoes, and balsamic vinaigrette.",
+            "image": "https://example.com/chicken-salad.jpg",
+            "calories": 370,
+            "ingredients": ["1 grilled chicken breast", "2 cups mixed greens", "1/2 cup cherry tomatoes", "1 tbsp balsamic vinaigrette"]
+          },
+          {
+            "title": "Smoothie Bowl",
+            "description": "A blend of bananas, berries, and Greek yogurt, topped with granola.",
+            "image": "https://example.com/smoothie-bowl.jpg",
+            "calories": 380,
+            "ingredients": ["1 banana", "1/2 cup berries", "1/2 cup Greek yogurt", "1/4 cup granola"]
+          },
+          {
+            "title": "Brown Rice and Steamed Vegetables",
+            "description": "A serving of brown rice with a mix of steamed carrots, broccoli, and peas.",
+            "image": "https://example.com/rice-vegetables.jpg",
+            "calories": 390,
+            "ingredients": ["1/2 cup brown rice", "1/2 cup steamed vegetables"]
+          },
+          {
+            "title": "Chickpea Salad",
+            "description": "A refreshing salad with chickpeas, cucumber, tomato, and olive oil dressing.",
+            "image": "https://example.com/chickpea-salad.jpg",
+            "calories": 400,
+            "ingredients": ["1/2 cup chickpeas", "1/2 cucumber", "1 tomato", "1 tbsp olive oil", "Lemon juice"]
+          },
+          {
+            "title": "Grilled Shrimp Tacos",
+            "description": "Soft corn tortillas filled with grilled shrimp, cabbage slaw, and a drizzle of lime crema.",
+            "image": "https://example.com/shrimp-tacos.jpg",
+            "calories": 390,
+            "ingredients": ["2 small corn tortillas", "5 shrimp", "1/4 cup cabbage slaw", "1 tbsp lime crema"]
+          }
+        ]
+      },
+      {
+        "category": "500 kcal or less",
+        "items": [
+          {
+            "title": "Quinoa and Roasted Veggies",
+            "description": "A hearty bowl of quinoa mixed with roasted bell peppers, zucchini, and chickpeas.",
+            "image": "https://example.com/quinoa-veggies.jpg",
+            "calories": 420,
+            "ingredients": ["1/2 cup quinoa", "1/2 cup roasted bell peppers", "1/2 cup roasted zucchini", "1/4 cup chickpeas"]
+          },
+          {
+            "title": "Turkey and Avocado Sandwich",
+            "description": "Whole grain bread filled with lean turkey slices, avocado, lettuce, and tomato.",
+            "image": "https://example.com/turkey-sandwich.jpg",
+            "calories": 440,
+            "ingredients": ["2 slices whole grain bread", "3 oz turkey breast", "1/4 avocado", "2 lettuce leaves", "2 slices tomato"]
+          },
+          {
+            "title": "Baked Salmon with Asparagus",
+            "description": "Oven-baked salmon fillet served with roasted asparagus and lemon slices.",
+            "image": "https://example.com/salmon-asparagus.jpg",
+            "calories": 460,
+            "ingredients": ["1 salmon fillet", "1/2 cup roasted asparagus", "1 lemon slice", "Salt & pepper"]
+          },
+          {
+            "title": "Chicken Stir-Fry with Veggies",
+            "description": "A stir-fry of lean chicken breast with mixed vegetables in a light soy sauce.",
+            "image": "https://example.com/chicken-stirfry.jpg",
+            "calories": 480,
+            "ingredients": ["3 oz chicken breast", "1/2 cup mixed vegetables", "1 tbsp soy sauce"]
+          },
+          {
+            "title": "Tuna Salad with Avocado",
+            "description": "A refreshing tuna salad with avocado, mixed greens, and a lemon vinaigrette.",
+            "image": "https://example.com/tuna-avocado.jpg",
+            "calories": 460,
+            "ingredients": ["3 oz canned tuna", "1/4 avocado", "2 cups mixed greens", "1 tbsp lemon vinaigrette"]
+          },
+          {
+            "title": "Sweet Potato and Black Bean Chili",
+            "description": "A flavorful chili made with sweet potatoes, black beans, and diced tomatoes.",
+            "image": "https://example.com/sweet-potato-chili.jpg",
+            "calories": 490,
+            "ingredients": ["1/2 cup sweet potato", "1/2 cup black beans", "1/2 cup diced tomatoes", "Spices"]
+          },
+          {
+            "title": "Vegetable Stir-Fry with Tofu",
+            "description": "A plant-based stir-fry with tofu, broccoli, bell peppers, and a ginger soy sauce.",
+            "image": "https://example.com/tofu-stirfry.jpg",
+            "calories": 480,
+            "ingredients": ["1/2 cup tofu", "1/2 cup broccoli", "1/4 cup bell peppers", "1 tbsp ginger soy sauce"]
+          }
+        ]
+      }
+    ]
+  }
+  
