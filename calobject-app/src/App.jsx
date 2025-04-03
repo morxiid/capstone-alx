@@ -1,20 +1,20 @@
-import {Route, Routes, Link} from 'react-router-dom'
+import {Route, Routes, Link} from 'react-router-dom';
+import { useState } from 'react';
+import { useEffect } from 'react';
 import React from "react";
 import HomePage from './components/HomePage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import LogInForm from './components/LoginForm';
 import SignUpForm from './components/SignupForm';
-import WebApp from './components/WebApp';
-import { useState } from 'react';
-import { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import NotFound from './components/NotFound';
+import CalorieCalculator from './components/CalorieCalculator';
+import MealDetails from './components/MealDetails';
+
 
 
 function App() {
     const[isLoggedIn, setIsLoggedIn] = useState(false);
-    const navigate = useNavigate();
-
 
     //Recive user data from local storage
     const storedData = JSON.parse(localStorage.getItem("user"));
@@ -34,7 +34,7 @@ function App() {
     function onLogout(){
       localStorage.removeItem("user");
       setIsLoggedIn(false);
-      navigate("/");
+      window.location.href = '/';
     }
 
     return (
@@ -44,9 +44,11 @@ function App() {
           <Route path='/' element = {<HomePage/>} />
           <Route path='/signup' element = {<SignUpForm isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
           <Route path='/login' element = {<LogInForm isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
-          <Route path='/calobject' element = {<WebApp/>} />
+          <Route path='/calobject' element = {<CalorieCalculator/>} />
+          <Route path='*' element = {<NotFound/>} />
         </Routes>
         <Footer />
+        
       </>
     )
 }
