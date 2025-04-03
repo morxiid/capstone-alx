@@ -1,6 +1,5 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
-import WebApp from "./WebApp";
 import Logo from "../assets/logo.png";
 import CalorieCalculator from "./CalorieCalculator";
 import { useNavigate } from "react-router-dom";
@@ -40,7 +39,7 @@ function LogInForm({isLoggedIn, setIsLoggedIn, }){
     return(
         <div>
             {isLoggedIn ? (
-                <WebApp />
+                <CalorieCalculator />
             ):(
                 <div>
                     <img src="{Logo}" alt="Logo" />

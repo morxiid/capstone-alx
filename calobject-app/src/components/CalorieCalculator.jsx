@@ -9,7 +9,7 @@ function CalorieCalculator(){
     const[height, setHeight] = useState("");
     const[activity, setActivity] = useState("");
     const[objective, setObjective] = useState("");
-    const[Kcal, setKcal] = useState(0);
+    const[Kcal, setKcal] = useState("");
     const[showResult, setShowResult] = useState(false);
 
     const storedData = JSON.parse(localStorage.getItem("user"));
@@ -47,11 +47,12 @@ function CalorieCalculator(){
         Kcal = Math.round(Kcal * 100) / 100;
         setKcal(Kcal)
         setShowResult(true);
-    }
+    };
 
     
 
     return(
+        <>
         <div>
             <h2>Welcome <span>{username && username.charAt(0).toUpperCase() + username.slice(1)}</span> !</h2>
             <p>Enter the current informations, please.</p>
@@ -90,6 +91,8 @@ function CalorieCalculator(){
             <button onClick={() => Calculator()}>Calculate</button>
             {showResult && (<p>Your daily calorie needs is: {Kcal}</p>)} 
         </div>
+        <MealSuggestion kcal={Kcal}/>
+        </>
     )
 }
 
