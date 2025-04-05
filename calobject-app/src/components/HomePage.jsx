@@ -15,20 +15,19 @@ function HomePage(){
 
     return(
         <div className="Container">
-            <div className="hero-section">
+            <main className="hero-section">
                 <h1>Take Control of Your Health with Calobject</h1>
                 <img src={Cover} alt="cover image" style={coverStyle} />
-            </div>
+            </main>
             <div className="features-section">
             <div>
                 <img src={icon1} alt="calculator icon" />
-                    <h6>Calorie Calculator</h6>
+                <h6>Calorie Calculator</h6>
                 
             </div>
             <div>
                 <img src={icon2} alt="apple icon" />
-                    <h6>Meal Sugestion</h6>
-                
+                <h6>Meal Sugestion</h6>
             </div>
             <div>
                 <img src={icon3} alt="controler icon" />
