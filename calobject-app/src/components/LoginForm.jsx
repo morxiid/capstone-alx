@@ -41,22 +41,28 @@ function LogInForm({isLoggedIn, setIsLoggedIn, }){
             {isLoggedIn ? (
                 <CalorieCalculator />
             ):(
-                <div className="border justify-center items-center space-y-4 w-full">
-                    <div className="w-[50%] justify-center items-center ">
-                        <img src={Logo} alt="Logo" className="h-20 w-40"/>
-                        <form className="space-y-3" onSubmit={handleLogin}>
-                            <label>Email:</label>
-                            <input className="inpt" type="email" value={loginForm.email} onChange={(e) => setLoginForm({...loginForm, email: e.target.value})} required={true}/><br />
-                            <label>Password:</label>
-                            <input className="inpt" type="password" value={loginForm.password} onChange={(e) => setLoginForm({...loginForm, password: e.target.value})} required={true}/><br />
-                            <button className="btn">Log in</button>
-                        </form>
-                        <div className="mt-10">
-                            <p>I already have an account - <Link className="font-bold" to="/sign up">Sign up</Link></p>
-                            <p>Use Calobject as -<Link className="font-bold" to="/calobject">Guest</Link></p>
+                <div className="flex justify-center my-10">
+                    <div className="py-5 w-1/3 flex justify-center shadow-xl rounded-xl mt-5">
+                        <div className="w-[70%] md:space-y-20">
+                            <div className="flex justify-center">
+                                <img src={Logo} alt="Logo" className="h-20 w-40 "/>
+                            </div>
+                            <form className="space-y-4" onSubmit={handleLogin}>
+                                <label>Email:</label>
+                                <input className="inpt" type="email" value={loginForm.email} onChange={(e) => setLoginForm({...loginForm, email: e.target.value})} required={true}/>
+                                <label>Password:</label>
+                                <input className="inpt" type="password" value={loginForm.password} onChange={(e) => setLoginForm({...loginForm, password: e.target.value})} required={true}/>
+                                <div className="flex justify-center">
+                                    <button className="btn">Log in</button>
+                                </div>
+                            </form>
+                            <div className="mt-10">
+                                <p className="justify-center flex">I already have an account - <Link className="font-bold" to="/sign up">Sign up</Link></p>
+                                <p className="justify-center flex">Use Calobject as -<Link className="font-bold" to="/calobject">Guest</Link></p>
+                            </div>
+                            
                         </div>
-                        
-                    </div>
+                    </div> 
                 </div>)}
         </div> 
             

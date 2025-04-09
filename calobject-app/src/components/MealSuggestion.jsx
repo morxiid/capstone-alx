@@ -42,8 +42,8 @@ function MealSuggestion({kcal}){
                 <div className="overflow-x-auto space-x-4">
                     {showMeals ? (
                         <>
-                        {mealKcal > 100 &&  //meal calorie more than 100
-                        mealKcal <= 300 && //meal calorie under or equal 300
+                        {mealKcal > 100 &&  
+                        mealKcal <= 300 && 
                         firstCategory.filter(meal => meal.kcal !=0 && meal.kcal <= 300).length > 0 && (
                             <div className="crd">
                                 {firstCategory
@@ -65,10 +65,12 @@ function MealSuggestion({kcal}){
                             <div className="crd">
                                 {secondCategory
                                 .map(meal => (
-                                    <div className="dv" key={meal.id} onClick={() => setSelectedMeal(meal)}>
-                                        <img src={meal.image} alt="meal photo" className="img"/>
-                                        <h4 className="txt">{meal.title}</h4>
-                                        <p>Kcal: <b>{meal.kcal}</b></p>
+                                    <div>
+                                        <div className="dv" key={meal.id} onClick={() => setSelectedMeal(meal)}>
+                                            <img src={meal.image} alt="meal photo" className="img"/>
+                                            <h4 className="txt">{meal.title}</h4>
+                                            <p>Kcal: <b>{meal.kcal}</b></p>
+                                        </div>
                                     </div>
                                 ))}
                             </div>
@@ -95,10 +97,12 @@ function MealSuggestion({kcal}){
                             <div className="crd">
                                 {fourthCategory
                                 .map(meal => (
-                                    <div className="dv" key={meal.id} onClick={() => setSelectedMeal(meal)}>
-                                        <img src={meal.image} alt="meal photo" className="img"/>
-                                        <h4 className="txt">{meal.title}</h4>
-                                        <p>Kcal: <b>{meal.kcal}</b></p>
+                                    <div>
+                                        <div className="dv" key={meal.id} onClick={() => setSelectedMeal(meal)}>
+                                            <img src={meal.image} alt="meal photo" className="img"/>
+                                            <h4 className="txt">{meal.title}</h4>
+                                            <p>Kcal: <b>{meal.kcal}</b></p>
+                                        </div>
                                     </div>
                                 ))}
                             </div>

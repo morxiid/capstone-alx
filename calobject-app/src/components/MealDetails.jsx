@@ -3,7 +3,7 @@ function MealDetails({meal, handleClose}) {
     
 
     return(
-        <div className="pt-10 m-auto ">
+        <div className="pt-10 m-auto">
             <div className=" m-auto w-[40%] space-y-3 shadow-2xl h-auto">
                 <img src={meal.image} alt="meal image" className="w-full p-3 h-80 rounded-3xl"/>
                 <div className="px-3 space-y-3">
@@ -12,12 +12,14 @@ function MealDetails({meal, handleClose}) {
                         <p>Calories: <b>{meal.kcal}</b> Kcal</p>
                     </div>
                     <h4 className="text-lg">Ingredients:</h4>
-                    <ul className="">
+                    <ul className="divide-y divide-gray-200">
                         {meal.ingredients.map((ingredients, index) => (
-                            <li key={index}>{ingredients}</li>
+                            <li key={index}>- {ingredients}</li>
                         ))}
                     </ul>
-                    <button className="btn" onClick={handleClose}>Close</button>
+                    <div className=" flex items-center justify-center">
+                        <button className="btn mt-5" onClick={handleClose}>Close</button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
-import Logo from "../assets/logo.png";
+import notFound from "../assets/notfound.png";
 
 
 function NotFound(){
 
     return(
-        <div className="space-y-4">
-            <img src={Logo} alt="logo" className="h-20 w-40"/>
-            <h1 className="text-9xl text-lime-500 font-bold">404</h1>
-            <div className="">
-                <h3 className="text-3xl">Page Not Found</h3>
-                <Link to="/calobject"><p>Back to home Page</p></Link>
+        <div className="flex justify-center mt-20">
+            <div className="space-y-4">
+                <img src={notFound} alt="logo" className="h-80 shadow-xl rounded-xl"/>
+                <h1 className="text-9xl text-lime-500 font-bold"></h1>
+                <div className=" flex justify-center">
+                    <Link to="/"><button className="btn shadow-xl">Back Home</button></Link>
+                </div>
             </div>
         </div>
     )
